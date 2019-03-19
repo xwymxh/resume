@@ -1,16 +1,8 @@
 SRC = $(wildcard *.tex)
 
-PDFS = $(SRC:.tex=.pdf)
-
 all:	clean pdf
 
-en:	clean xelatex resume.tex
-
-zh_CN:	clean xelatex resume-zh_CN.tex
-
-pdf:	clean $(PDFS)
-
-%.pdf:  %.tex
+pdf:  resume.tex
 	xelatex $<
 
 ifeq ($(OS),Windows_NT)
