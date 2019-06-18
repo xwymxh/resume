@@ -25,9 +25,9 @@
 \begin{minipage}{0.7\textwidth}
   \Large{
     \begin{tabu}  { l }
-      \scshape{唐宗勋} \\
-      \email{tangzongxun@hotmail.com} \\
-      \phone{(+86) 13070156080} \\
+      \scshape{许文郁} \\
+      \email{xwymxh@foxmail.com} \\
+      \phone{(+86) 18811596155} \\
     \end{tabu}
   }
 \end{minipage}
@@ -36,61 +36,66 @@
   \includegraphics[height=30mm]{me}
 \end{minipage}
 
-% \name{唐宗勋}
-%
-% \basicInfo{
-%   \email{tangzongxun@hotmail.com} \textperiodcentered\ 
-%   \phone{(+86) 13070156080} \textperiodcentered\ 
-%   \linkedin[tangzongxun]{https://www.linkedin.com/in/tangzongxun}}
+\section{  教育背景}
+\datedsubsection{\textbf{北京航空航天大学}}{2017 -- 至今}
+\textit{在读硕士研究生}\quad {计算机学院} 2020年1月毕业}
+\datedsubsection{\textbf{山西大学}}{2012 -- 2016}
+\textit{学士}\quad  {计算机学院}\quad { 软件工程}
 
-
-\section{教育背景}
-\datedsubsection{\textbf{北京航空航天大学}, 北京}{2017 -- 至今}
-\textit{在读硕士研究生}\ 电子与通信工程, 预计 2020 年 1 月毕业
-\datedsubsection{\textbf{北京航空航天大学}, 北京}{2013 -- 2017}
-\textit{学士}\ 电子信息工程，成绩位列前20\%
-
-\section{项目经历}
-\datedsubsection{\textbf{libsm}}{2018年3月 -- 2018年7月}
-\role{Rust}{实验室项目，和秘猿科技合作}
-主要作者, \hlink{https://github.com/cryptape/libsm}
-\begin{itemize}
-  \item Rust 语言的中国国家商用密码算法库
-  \item 实现了对称加密、哈希函数、数字签名功能
-  \item 已经应用于 CITA 项目(\hlink{https://github.com/cryptape/cita})中
-\end{itemize}
-
-\datedsubsection{\textbf{pec-client}}{2018年10月 -- 2019年1月}
-\role{JavaScript, React}{实验室项目}
-\begin{onehalfspacing}
-区块链 DApp 前端, \hlink{https://github.com/BH-Open-Blockchain-XLab/pec-client}
-\begin{itemize}
-  \item 采用 React/Redux 框架的单页应用
-  \item 实现了登录、交易显示、交易提交等功能
-\end{itemize}
-\end{onehalfspacing}
-
-\section{专业技能}
+\section{技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 熟悉 C++ 及 STL；有 Python、JavaScript、Rust 的使用经历
-  \item 熟悉 Linux 下的开发环境
-  \item 熟悉 Git、Docker 等常见开发工具
-  \item 具备密码学知识，包括对称密码、公钥密码和零知识证明，了解常见区块链系统
-  \item 有嵌入式开发和数字信号处理的相关经验
-  \item 了解计算机网络、HTTP 协议以及 Web 前后端开发
+  \item 熟悉Java、JVM、Java并发，熟悉常用的设计模式、数据结构及算法
+  \item 熟悉MySQL，了解Redis
+  \item 熟悉SSM，了解Zookeeper
 \end{itemize}
 
 \section{获奖情况}
-\datedline{全国大学生电子设计竞赛（北京赛区）二等奖}{2015 年 8 月}
-\datedline{北航科技竞赛二等奖学金}{2015 年 12 月}
-\datedline{北航学习优秀三等奖学金}{2016 年 12 月}
-\datedline{北航研究生二等奖学金}{2017 年 9 月}
+\datedline{\textit{全国大学生数学建模竞赛山西赛区二等奖}}{2014 年 8 月}
+\datedline{\textit{山西大学优秀毕业生}}{2016 年 7 月}
 
-\section{其他}
+\section{项目经历}
+
+\datedsubsection{\textbf{基于语义的行人图像生成}}{2018年9月 -- 至今}
+\role{VAE,U-net}{研究生课题}
+%\begin{onehalfspacing}
+\begin{itemize}[topsep = 0 pt, partopsep = 0pt]
+  \item 控制生成行人图像的姿态
+  \item 相较现有算法,实现了对生成行人的部件级控制
+  \item 实验与论文进行中
+\end{itemize}
+%\end{onehalfspacing}
+
+\datedsubsection{\textbf{某部队遥感项目}}{2018年5月 -- 2019年1月}
+\role{MFC,Socket}{实验室项目}
+%\begin{onehalfspacing}
+\begin{itemize}[topsep = 0 pt, partopsep = 0pt]
+  \item 负责传输(文本、图像和视频)模块的实现
+\end{itemize}
+%\end{onehalfspacing}
+
+\datedsubsection{\textbf{电商秒杀系统}}{2017年7月 -- 2017年8月}
+\role{SpringBoot,Maven,Mybatis,Redis,RabbitMQ}{个人Demo}
+\begin{itemize}[topsep = 0 pt, partopsep = 0pt]
+  \item 使用redis做缓存提高访问速度和并发量，减少数据库压力
+  \item RabbitMQ 完成异步下单，提升用户体验，削峰和降流
+  \item Airflow 任务调度，自动化周期性任务
+\end{itemize}
+
+\datedsubsection{\textbf{ CTCS-3 列控系统运行状态智能评估系统}}{2013年12月 -- 2014年12月}
+\role{SSM,Spark}{大创项目,中国铁道科学研究院}
+%\begin{onehalfspacing}
+\begin{itemize}[topsep = 0 pt, partopsep = 0pt]
+  \item 利用决策树、随机森林算法对降级故障分类
+  \item 利用K-means、KNN算法评估列车运行状态
+\end{itemize}
+%\end{onehalfspacing}
+
+\section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 语言: 英语 - 熟练(CET-6 546)
+  \item  英语 - 熟练(CET-6)
+  \item  性格爱好 - 热情活波；喜欢体育运动(游泳滑冰等)
 \end{itemize}
 
 \end{document}
