@@ -58,12 +58,12 @@
 
 \section{项目经历}
 
-\datedsubsection{\textbf{基于语义的行人图像生成}}{2018年9月 -- 至今}
+\datedsubsection{\textbf{基于人体语义部件的行人图像生成}}{2018年9月 -- 至今}
 \role{VAE,U-net}{研究生课题}
 %\begin{onehalfspacing}
 \begin{itemize}[topsep = 0 pt, partopsep = 0pt]
-  \item 控制生成行人的姿态
-  \item 相较现有算法,实现了分别控制生成行人的上下身外观
+  \item 利用现有算法分割行人得到语义部件，建立行人部件数据库
+  \item 基于条件U-net，训练生成模型，能对行人姿态、上下身衣着进行控制
   \item 实验与论文进行中
 \end{itemize}
 %\end{onehalfspacing}
@@ -72,15 +72,19 @@
 \role{MFC,ZeroMQ}{实验室项目}
 %\begin{onehalfspacing}
 \begin{itemize}[topsep = 0 pt, partopsep = 0pt]
-  \item 利用ZeroMQ传输文本、图像和视频
+  \item 项目包括传输、关联检索、变化检测及路径规划等模块  
+  \item 组要负责传输模块的设计与实现
+  \item 利用ZeroMQ消息中间件，传输数据库字段、文档、图像和视频等信息
 \end{itemize}
 %\end{onehalfspacing}
 
 \datedsubsection{\textbf{电商秒杀系统}}{2017年7月 -- 2017年8月}
 \role{SpringBoot,Mybatis,Redis,RabbitMQ}{个人Demo}
 \begin{itemize}[topsep = 0 pt, partopsep = 0pt]
+  \item 基于SpringBoot搭建秒杀系统，利用缓存和消息中间件等做高并发优化，2763QPS
   \item 利用Redis做缓存提高访问速度和并发量，减少数据库压力
   \item 利用RabbitMQ 完成异步下单，提升用户体验，削峰和降流
+  \item 安全性方面实现了秒杀地址隐藏和接口限流防刷
 \end{itemize}
 
 \datedsubsection{\textbf{ CTCS-3 列控系统运行状态智能评估系统}}{2013年12月 -- 2014年12月}
@@ -89,6 +93,7 @@
 \begin{itemize}[topsep = 0 pt, partopsep = 0pt]
   \item 利用决策树、随机森林算法对降级故障分类，准确率97.04$\%$
   \item 利用K-means、KNN算法评估列车运行状态
+  \item 基于SSM框架实现评估系统
 \end{itemize}
 %\end{onehalfspacing}
 
